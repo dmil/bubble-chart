@@ -295,3 +295,25 @@ If you have multiple charts on the same page, I would do the following:
     text-anchor: middle;
   }
   ```
+
+## Example with two charts on the same page
+
+  Here is an example file structure for a single page with two charts
+
+  ![](https://www.evernote.com/shard/s150/sh/68832346-f176-4359-ad74-def7dac5a372/b296fed046f93d98/res/5c8835c1-0eca-41b3-babe-3bca05e8f0e7/skitch.png?resizeSmall&width=832)
+
+
+  This is what the `index.html` will look like, notice we added an `id` tag for each element where the chart will bind to.
+
+  ![](https://www.evernote.com/shard/s150/sh/8d1bf083-7691-4f44-bf33-cb8183b55dbf/778e721260d0e910/res/331684f6-2d74-4b00-999d-8d6e723becb7/skitch.png?resizeSmall&width=832)
+
+
+  then you have to make sure the JavaScript binds to the element with the `id` of `chart1` with the CSS Selector `#chart1` rather than just to any SVG element as is default.
+
+  ![](https://www.evernote.com/shard/s150/sh/9579bc9f-2ef8-4940-a212-4537c93de7b2/45c485ddd13daf97/res/6343fcec-2ff5-4200-9b80-b6e095df091c/skitch.png)
+
+  finally, make sure the CSS of each chart doesn't conflict with the other by modifying the CSS selectors in `chart1.css` and `chart2.css` like this
+
+  ![](https://www.evernote.com/shard/s150/sh/0fd18ec0-f128-4379-9973-f2f3ac7ca5e3/3d260d1f5f8eddc4/res/b7391064-517c-4880-9afc-7f17edb3e4eb/skitch.png?resizeSmall&width=832)
+
+  For a more complete example, you can check out the `example-project` GitHub repo (coming soon!!!!)
