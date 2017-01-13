@@ -1,6 +1,8 @@
 # Bubble Chart
 
-Sample File
+https://dmil.github.io/bubble-chart/
+
+Original Source
 https://bl.ocks.org/mbostock/4063269
 
 Steps to adopt the sample bubble chart above.
