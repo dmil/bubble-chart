@@ -240,6 +240,20 @@ d3.csv("flare.csv", function(d) {
 Replace the data with data from elsewhere but in the exact same format,
 and you will have a working graphic!
 
+## Step 6
+
+One thing to note is that your computer cannot directly render the D3 in the way it does HTML pages. GitHub Pages however, can.
+
+If you're using D3 in your JavaScript, simply opening up the `index.html` file **will not work locally**.
+
+Instead, in your terminal you have to run
+
+```
+python -m SimpleHTTPServer 8000
+```
+
+and visit the page rendered locally at http://0.0.0.0:8000
+
 ## Notes
 
 ### Where the D3 finds the data
